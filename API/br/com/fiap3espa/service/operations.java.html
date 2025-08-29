@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>operations.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+operations.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">br</span><span class="s2">.</span><span class="s1">com</span><span class="s2">.</span><span class="s1">fiap3espa</span><span class="s2">.</span><span class="s1">service</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">com</span><span class="s2">.</span><span class="s1">oracle</span><span class="s2">.</span><span class="s1">xmlns</span><span class="s2">.</span><span class="s1">webservices</span><span class="s2">.</span><span class="s1">jaxws_databinding</span><span class="s2">.</span><span class="s1">SoapBindingStyle</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">jakarta</span><span class="s2">.</span><span class="s1">jws</span><span class="s2">.</span><span class="s1">WebMethod</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">jakarta</span><span class="s2">.</span><span class="s1">jws</span><span class="s2">.</span><span class="s1">WebService</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">jakarta</span><span class="s2">.</span><span class="s1">jws</span><span class="s2">.</span><span class="s1">soap</span><span class="s2">.</span><span class="s1">SOAPBinding</span><span class="s2">;</span>
+
+<span class="s1">@WebService</span>
+<span class="s1">@SOAPBinding</span><span class="s2">(</span><span class="s1">style </span><span class="s2">= </span><span class="s1">SOAPBinding</span><span class="s2">.</span><span class="s1">Style</span><span class="s2">.</span><span class="s1">DOCUMENT</span><span class="s2">)</span>
+
+
+<span class="s0">public interface </span><span class="s1">operations </span><span class="s2">{</span>
+<span class="s1">@WebMethod</span>
+<span class="s1">String showName</span><span class="s2">();</span>
+
+<span class="s1">@WebMethod</span>
+<span class="s1">String showSymbol</span><span class="s2">();</span>
+
+<span class="s1">@WebMethod</span>
+<span class="s0">double </span><span class="s1">calculate</span><span class="s2">(</span><span class="s0">double </span><span class="s1">a</span><span class="s2">, </span><span class="s0">double </span><span class="s1">b</span><span class="s2">);</span>
+
+<span class="s1">@WebMethod</span>
+<span class="s1">String showMessage</span><span class="s2">(</span><span class="s0">double </span><span class="s1">a</span><span class="s2">, </span><span class="s0">double </span><span class="s1">b</span><span class="s2">);</span>
+
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
